@@ -1,7 +1,8 @@
+[![Build Status](https://travis-ci.org/jmcriffey/interview.png)](https://travis-ci.org/jmcriffey/interview)
+
 Ambition Front End Interview Project
 ==================
 
-[![Build Status](https://travis-ci.org/jmcriffey/interview.png)](https://travis-ci.org/jmcriffey/interview)
 Setup
 -----
 To setup this project, you'll need the following installed on your system:
