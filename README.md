@@ -1,6 +1,7 @@
+[![Build Status](https://travis-ci.org/jmcriffey/interview.png)](https://travis-ci.org/jmcriffey/interview)
+
 Ambition Front End Interview Project
 ==================
-
 
 Setup
 -----
