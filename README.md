@@ -41,7 +41,7 @@ Project Notes
 * Write any HTML in: [index.html](index.html)
 * Write any JavaScript in: [static/ambition/js/CompetitorGrid.js](static/ambition/js/CompetitorGrid.js)
 * Write Jasmine tests in: [static/ambition/js/test/CompetitorGrid.js](static/ambition/js/test/CompetitorGrid.js)
-* Write any CSS in: [static/ambition/resources/css/ambition-all.css](static/ambition/resources/css/ambition-all.css)
+* Write any CSS in: [static/ambition/resources/css/ambition-all.css](static/ambition/css/ambition-all.css)
 * If you use a CSS preprocessor, make sure it compiles to: [static/ambition/css/ambition-all.css](static/ambition/css/ambition-all.css)
 * The design image to implement: [table-design.png](table-design.png)
 * http://127.0.0.1:8080/ will serve [index.html](index.html)
@@ -71,5 +71,4 @@ Project Parameters
 * Write tests using [Jasmine](http://pivotal.github.io/jasmine/)
     * The test file is at: [test file](static/ambition/js/test/CompetitorGrid.js)
     * Do not do any asynchronous testing
-* Make sure your code passes the Jasmine and linting tests by running the test command.
-* Code coverage reporting is there for reference. Do not assume 100% is required or desirable.
+* Make sure your code passes the test suite and linting by running the 'npm test' command.
