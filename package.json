@@ -11,10 +11,11 @@
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jscs-checker": "~0.3.2",
-    "grunt-contrib-jasmine": "~0.5.2"
+    "grunt-contrib-jasmine": "~0.5.2",
+    "grunt-cli": "~0.1.11"
   },
   "scripts": {
-    "test": "node -e \"require('grunt').cli();\"",
+    "test": "grunt",
     "start": "node server.js"
   }
 }
