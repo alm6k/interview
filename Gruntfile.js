@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     var jsFiles = ['static/ambition/**/*.js'],
+        libFiles = ['static/lib/**/*.js'],
         testFiles = ['static/ambition/test/*.js'],
         lintFiles = ['Gruntfile.js'].concat(jsFiles),
         pkg = grunt.file.readJSON('package.json'),
@@ -20,7 +21,8 @@ module.exports = function(grunt) {
         jasmine: {
             src: jsFiles,
             options: {
-                specs: testFiles
+                specs: testFiles,
+                vendor: libFiles
             }
         }
     });
