@@ -1,6 +1,6 @@
 describe('CompetitorGrid', function() {
-    it('should be an object', function() {
-        expect(CompetitorGrid).toEqual(jasmine.any(Object));
+    it('should not be null', function() {
+        expect(CompetitorGrid).not.toBe(null);
     });
 
     /**
