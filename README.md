@@ -36,14 +36,16 @@ to make sure you see 'Hello World!' inside the green div.
 
 Project Notes
 -------------
-* If you need to run the server on a port other than 8080, change the port variable in [server.js](server.js)
-* The only available library is [jQuery](static/lib/js/jquery-2.0.3.min.js)
-* Write any HTML in: [index.html](index.html)
-* Write any JavaScript in: [static/ambition/js/CompetitorGrid.js](static/ambition/js/CompetitorGrid.js)
-* Write Jasmine tests in: [static/ambition/js/test/CompetitorGrid.js](static/ambition/js/test/CompetitorGrid.js)
-* Write any CSS in: [static/ambition/resources/css/ambition-all.css](static/ambition/css/ambition-all.css)
+* Feel free to edit any existing files as needed
+* Do not create any new files in the [static/ambition/js/](static/ambition/js/) or [static/ambition/resources/css/](static/ambition/css/) directories
+* The only available library is [jQuery v2.0.3](static/lib/js/jquery-2.0.3.min.js)
+* Add any HTML to: [index.html](index.html)
+* Add all grid code to: [static/ambition/js/CompetitorGrid.js](static/ambition/js/CompetitorGrid.js)
+* Add all grid tests to: [static/ambition/js/test/CompetitorGrid.js](static/ambition/js/test/CompetitorGrid.js)
+* Add all CSS to: [static/ambition/resources/css/ambition-all.css](static/ambition/css/ambition-all.css)
 * If you use a CSS preprocessor, make sure it compiles to: [static/ambition/css/ambition-all.css](static/ambition/css/ambition-all.css)
 * The design image to implement: [table-design.png](table-design.png)
+* If you need to run the server on a port other than 8080, change the port variable in [server.js](server.js)
 * http://127.0.0.1:8080/ will serve [index.html](index.html)
 * http://127.0.0.1:8080/index.html will serve [index.html](index.html)
 * http://127.0.0.1:8080/api/competitor/ will serve JSON from the competitor database
@@ -68,7 +70,6 @@ Project Parameters
     * Center the container in the middle of the page
 * Use onclick handlers for column headers to allow local sorting on each column
     * The name column should be sorted on the 'lastName' parameter
-* Write tests using [Jasmine](http://pivotal.github.io/jasmine/)
+* Write some useful tests using [Jasmine](http://pivotal.github.io/jasmine/)
     * The test file is at: [test file](static/ambition/js/test/CompetitorGrid.js)
-    * Do not worry about asynchronous testing, unless you want to
 * Make sure your code passes the test suite and linting by running the 'npm test' command.
