@@ -70,5 +70,5 @@ Project Parameters
     * The name column should be sorted on the 'lastName' parameter
 * Write tests using [Jasmine](http://pivotal.github.io/jasmine/)
     * The test file is at: [test file](static/ambition/js/test/CompetitorGrid.js)
-    * Do not do any asynchronous testing
+    * Do not worry about asynchronous testing, unless you want to
 * Make sure your code passes the test suite and linting by running the 'npm test' command.
