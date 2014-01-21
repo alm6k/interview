@@ -37,7 +37,6 @@ to make sure you see 'Hello World!' inside the green div.
 Project Notes
 -------------
 * Feel free to edit any existing files as needed
-* Do not create any new files in the [static/ambition/js/](static/ambition/js/) or [static/ambition/resources/css/](static/ambition/css/) directories
 * The only available library is [jQuery v2.0.3](static/lib/js/jquery-2.0.3.min.js)
 * Add any HTML to: [index.html](index.html)
 * Add all grid code to: [static/ambition/js/CompetitorGrid.js](static/ambition/js/CompetitorGrid.js)
