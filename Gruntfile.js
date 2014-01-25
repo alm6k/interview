@@ -13,10 +13,16 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: pkg,
         jshint: {
-            all: lintFiles
+            all: lintFiles,
+            options: {
+                jshintrc: '.jshintrc'
+            }
         },
         jscs: {
-            all: lintFiles
+            all: lintFiles,
+            options: {
+                config: '.jscs.json'
+            }
         },
         jasmine: {
             src: jsFiles,
