@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Competitors</title>
-        <script src="static/lib/js/jquery-2.0.3.min.js"></script>
-        <script src="static/ambition/js/CompetitorGrid.js"></script>
-        <link rel="stylesheet" href="static/ambition/css/ambition-all.css">
-    </head>
-    <body>
-        <div class="ambition-green-box">Hello World!</div>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Competitors</title>
+		<script src="static/lib/js/jquery-2.0.3.min.js"></script>
+		<script src="static/ambition/js/CompetitorGrid.js"></script>
+		<link rel="stylesheet" href="static/ambition/css/ambition-all.css">
+	</head>
+	<body>
+		<div id="competitor-table-container">
+			<table>
+				<thead>
+					<tr>
+						<th id="competitor-table-title" colspan="4">Competitors</th>
+					</tr>
+					<tr id="competitor-table-heading">
+						<th>Email</th>
+						<th>Name</th>
+						<th>Team Name</th>
+						<th>Ambition Score</th>
+					</tr>
+				</thead>
+				<tbody id="competitor-table-body"></tbody>
+			</table>
+		</div>
+	</body>
 </html>

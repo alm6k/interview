@@ -69,6 +69,12 @@ server.get('/index.html', function(req, res) {
     res.sendfile('index.html');
 });
 
+//serve image
+server.get('/design', function(req, res) {
+    console.log(req.route.method.toUpperCase() + ':', req.route.path);
+    res.sendfile('table-design.png');
+});
+
 //serve competitor api
 server.get('/api/competitor', function(req, res) {
     console.log(req.route.method.toUpperCase() + ':', req.route.path);
