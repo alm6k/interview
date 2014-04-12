@@ -17,11 +17,11 @@ CompetitorGrid.load = function() {
 		success: function(data) {
 			_this.results = data;
 			_this.lastSort = -1;
+			_this.render();
 		},
 		error: function(jqXHR, textStatus, errorThrown) {
-			console.log('CompetitorGrid: ', textStatus, '//', errorThrown);
-		},
-		async: false
+			console.log('CompetitorGrid load: ', textStatus, '//', errorThrown);
+		}
 	});
 };
 
@@ -105,7 +105,6 @@ CompetitorGrid.sorters = [
 
 // ready function -- execute when page loads
 $(function() {
-	CompetitorGrid.load();
+	CompetitorGrid.load(); // this will do the render
 	CompetitorGrid.addSort();
-	CompetitorGrid.render();
 });
