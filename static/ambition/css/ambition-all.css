@@ -39,26 +39,26 @@ td:first-child, th:first-child {
 	border-left: none;
 }
 
-#competitor-table-container {
+.grid-container {
 	width: 800px;
 	background-color: white;
 	margin: 0 auto;
 }
 
-#competitor-table-title {
+.grid-title {
 	font-size: 24px;	
 	font-weight: normal;
 	border-top: none;
 }
 
-#competitor-table-heading th {
+.grid-heading th {
 	cursor: pointer;
 	box-shadow: 0px 2px 5px -1px #bbb;
 	-moz-box-shadow: 0px 2px 5px -1px #bbb;
 	-webkit-box-shadow: 0px 2px 5px -1px #bbb;
 }
 
-#competitor-table-summary {
+.grid-summary {
 	font-size: 18px;
 	color: #999;
 }
