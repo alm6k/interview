@@ -19,7 +19,6 @@ CompetitorGrid.prototype = {
     // load the grid with API data
     load: function() {
         var self = this; // preserve scope
-        self.results = null;
 
         $.ajax({
             url: 'api/competitor',
@@ -35,6 +34,55 @@ CompetitorGrid.prototype = {
         });
     },
 
+    // mock method to resemble a successful call to self.load()
+    testLoadSuccess: function() {
+        this.results = {
+            'meta': {
+                'count': 4,
+                'total': 5
+            },
+            'objects': [{
+                firstName: 'Steve',
+                lastName: 'Martin',
+                user: {
+                    email: 'steve.martin@tryambition.com'
+                },
+                teamName: 'The Jerks',
+                score: 97
+            }, {
+                firstName: 'Steve',
+                lastName: 'Jobs',
+                user: {
+                    email: 'steve.jobs@tryambition.com'
+                },
+                teamName: 'The Apples',
+                score: 82
+            }, {
+                firstName: 'Steve',
+                lastName: 'Wozniak',
+                user: {
+                    email: 'steve.wozniak@tryambition.com'
+                },
+                teamName: 'The Apples',
+                score: 94
+            }, {
+                firstName: 'Steve',
+                lastName: 'Spielberg',
+                user: {
+                    email: 'steve.spielberg@tryambition.com'
+                },
+                teamName: 'The Close Encounters',
+                score: 63
+            }]
+        };
+        this.render();
+    },
+
+    // mock method to test a failed call to load()
+    testLoadError: function() {
+        console.log('CompetitorGrid testLoadError called');
+    },
+
     // render the grid with the loaded data
     render: function() {
         var self = this; // preserve scope
@@ -43,7 +91,7 @@ CompetitorGrid.prototype = {
         if (self.results) {
             var count = self.results.meta.count,
                 total = self.results.meta.total,
-                      tableItems = '';
+                tableItems = '';
 
             // add rows
             $.each(self.results.objects, function(index, item) {
