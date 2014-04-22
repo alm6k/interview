@@ -12,6 +12,7 @@ function CompetitorGrid(targetSelector, minRowCount) {
     this.minRows = minRowCount;
     this.results = null;
     this.lastSort = null;
+    this.addSort();
 }
 
 // define the properties of the grid 
@@ -21,7 +22,7 @@ CompetitorGrid.prototype = {
         var self = this; // preserve scope
 
         $.ajax({
-            url: 'api/competitor',
+            url: '/api/competitor/',
             data: {'firstName': 'Steve'},
             dataType: 'json',
             success: function(data) {
@@ -32,55 +33,6 @@ CompetitorGrid.prototype = {
                 console.log('CompetitorGrid load: ', textStatus, '//', errorThrown);
             }
         });
-    },
-
-    // mock method to resemble a successful call to self.load()
-    testLoadSuccess: function() {
-        this.results = {
-            'meta': {
-                'count': 4,
-                'total': 5
-            },
-            'objects': [{
-                firstName: 'Steve',
-                lastName: 'Martin',
-                user: {
-                    email: 'steve.martin@tryambition.com'
-                },
-                teamName: 'The Jerks',
-                score: 97
-            }, {
-                firstName: 'Steve',
-                lastName: 'Jobs',
-                user: {
-                    email: 'steve.jobs@tryambition.com'
-                },
-                teamName: 'The Apples',
-                score: 82
-            }, {
-                firstName: 'Steve',
-                lastName: 'Wozniak',
-                user: {
-                    email: 'steve.wozniak@tryambition.com'
-                },
-                teamName: 'The Apples',
-                score: 94
-            }, {
-                firstName: 'Steve',
-                lastName: 'Spielberg',
-                user: {
-                    email: 'steve.spielberg@tryambition.com'
-                },
-                teamName: 'The Close Encounters',
-                score: 63
-            }]
-        };
-        this.render();
-    },
-
-    // mock method to test a failed call to load()
-    testLoadError: function() {
-        console.log('CompetitorGrid testLoadError called');
     },
 
     // render the grid with the loaded data
@@ -162,10 +114,3 @@ CompetitorGrid.prototype = {
         }
     }
 };
-
-// ready function -- execute when page loads
-$(function() {
-    var cg = new CompetitorGrid('#competitor-grid', 10);
-    cg.load();
-    cg.addSort();
-});
