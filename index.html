@@ -5,6 +5,17 @@
         <title>Competitors</title>
         <script src="static/lib/js/jquery-2.0.3.min.js"></script>
         <script src="static/ambition/js/CompetitorGrid.js"></script>
+        <script type="text/javascript">
+            /**
+             * Once the DOM fully loads, create an instance of
+             * CompetitorGrid with 10 rows, focused on the container
+             * div called "competitor-grid"
+             */
+            $(function() {
+                var cg = new CompetitorGrid("#competitor-grid", 10);
+                cg.load();
+            });
+        </script>
         <link rel="stylesheet" href="static/ambition/css/ambition-all.css">
     </head>
     <body>
